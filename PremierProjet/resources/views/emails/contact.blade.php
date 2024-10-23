@@ -6,6 +6,6 @@
 </head>
 <body>
     <h1>{{ $name }}</h1>
-    <p>je suis développeur</p>
+    <p>{{ $email }}</p>
 </body>
 </html>

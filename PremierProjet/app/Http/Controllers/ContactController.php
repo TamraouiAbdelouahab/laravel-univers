@@ -21,8 +21,8 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
         try{
-            Mail::send('emails.contact', $data, function($mailmessage) use ($data) {
-                $mailmessage->to('abdel@gmail.com', 'Destinataire')->subject('Nouveau message de contact');
+            Mail::send('emails.contact', $data, function($message) use ($data) {
+                $message->to('abdel@gmail.com', 'Destinataire')->subject('Nouveau message de contact');
             });
            return 'Email envoyé!';
         }
